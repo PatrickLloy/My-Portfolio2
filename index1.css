@@ -1,0 +1,248 @@
+a{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904);
+}
+
+p{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904);
+
+}
+h1,h2,h3,h4,h5,h6{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
+}
+body {
+  background-image: url('https://images.hdqwalls.com/download/simple-background-1366x768.jpg');
+
+  background-size: 102%;
+  background-attachment: fixed;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+
+}
+.navbar {
+  background-color: #000;
+}
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://c0.wallpaperflare.com/preview/847/634/542/black-business-camera-designer.jpg');
+  width: auto;
+  color: #fff;
+  padding: 100px 25px;
+  margin-bottom: 0x;
+  position: relative; /* Ensure the container is positioned */
+}
+
+/* Pseudo-element to create the overlay */
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Overlay color */
+  opacity: 80%; /* Adjust the opacity as needed */
+}
+
+/* Style for the content inside the .jumbotron */
+.jumbotron h1,
+.jumbotron p {
+  position: relative; /* Ensure the content is on top of the overlay */
+  z-index: 1; /* Ensure content appears above the overlay */
+}
+
+/* Style for the image with opacity */
+.jumbotron img {
+  opacity: 0%; /* Change the opacity value as desired */
+}
+
+.card {
+  background-color: #111;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.432);
+  transition: transform 0.3s ease-in-out;
+}
+.card-header {
+  background-color: #333;
+  color: #fff;
+}
+.card-footer {
+  background-color: #333;
+  color: #fff;
+}
+.card img {
+    border-radius: 15px 15px 0 0; /* To round only the top corners of the image */
+  }
+
+  .card,
+.carousel-item img {
+  border-radius: 15px; /* Adjust the border radius as needed */
+}
+
+.carousel-item img {
+  max-width: 100%; /* Ensure images don't overflow the carousel container */
+  height: auto;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+  }
+  .timeline li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff; /* Change color as needed */
+    border-radius: 50%;
+  }
+  .timeline li:nth-child(even)::before {
+    background-color: #28a745; /* Another color example */
+  }
+  .skill-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill-box {
+    flex: 1 1 100%; /* Equal height for all boxes */
+    background-color: rgba(17, 16, 16, 0.753);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .skill-box:hover {
+    transform: scale(1.05);
+  }
+  #certificationCarousel .carousel-item img {
+    height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.541);
+  }
+  .certi
+  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.473);
+    background-color:  #1414146c; /* Background color */
+ /* Border style */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+  }
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #00000000;
+    color: white;
+    border: none;
+    border-radius: 60%;
+    cursor: pointer;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #scrollTopBtn svg {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  #scrollTopBtn:hover {
+    background-color: #555;
+  }
+  
+  #scrollTopBtn.active {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+
+  .navbar-nav .nav-item a {
+
+    transition: color 0.3s; /* Smooth transition */
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    color: #ff0000; /* Change to your desired hover color */
+  }
+
+
+.navbar .navbar-brand {
+  transition: color 0.3s ease; 
+}
+.navbar .navbar-brand:hover {
+  
+  color: rgb(228, 42, 9);
+}
+#carouselProject1 .carousel-inner img {
+  width: 100%; /* Adjust this value as needed */
+  height: 520px; /* Adjust this value as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+#carouselProject2 .carousel-inner img {
+  width: 110%; /* Adjust this value as needed */
+  height: 520px; /* Adjust this value as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+#carouselProject3 .carousel-inner img {
+  width: 100%; /* Adjust this value as needed */
+  height: 220px; /* Adjust this value as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+#carouselProject4 .carousel-inner img {
+  width: 100%; /* Adjust this value as needed */
+  height: 220px; /* Adjust this value as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.embed-responsive-item
+{
+  border-radius: 15px;
+}
+.btn-social i {
+  transition: color 0.3s ease; /* Adding a smooth transition effect */
+}
+
+.btn-social:hover i {
+  
+  color: rgb(228, 115, 9);  /* Change the color to orange on hover */
+}
+.btn-shadow {
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; /* Adding transition for smooth hover effect */
+}
+
+/* Adding a different shadow when hovering */
+.btn-shadow:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.element {
+  overflow: hidden;
+}
